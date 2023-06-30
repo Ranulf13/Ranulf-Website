@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Techie Profile - Ranulf Klux P. Garcia</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('another.jpg'); /* Replace '' with your desired background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin-top: 50px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      overflow: auto; /* Add scrollable behavior */
+      max-height: 600px; /* Set maximum height for scrollable container */
+    }
+    
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      background-color: #fff;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+      border: 2px solid #333;
+    }
+    
+    .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+    
+    .description {
+      margin-bottom: 20px;
+    }
+    
+    .description-text {
+      color: #333;
+      font-family: 'Press Start 2P', cursive; /* Apply gaming font */
+      font-size: 16px;
+    }
+    
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .button {
+      display: flex; /* Display as flex */
+      align-items: center; /* Center the items vertically */
+      justify-content: flex-start; /* Align items to the start */
+      width: fit-content; /* Adjust width based on content */
+      height: 50px;
+      background-color: #333;
+      border-radius: 50px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      padding: 5px 10px; /* Add padding to the button */
+    }
+    
+    .button:hover {
+      background-color: #666;
+    }
+    
+    .button-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .button-text {
+      margin-left: 10px;
+      color: #fff;
+      font-family: 'Press Start 2P', cursive; /* Apply gaming font */
+      font-size: 14px; /* Adjust font size */
+      text-transform: uppercase; /* Add text transform */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="profile-picture">
+        <img src="nomuscle.png" alt="Profile Picture"> <!-- Replace 'nomuscle.png' with your own profile picture -->
+      </div>
+      <div class="profile-name">
+        Ranulf Klux P. Garcia <!-- Replace with your name -->
+      </div>
+    </div>
+    
+    <div class="description">
+      <p class="description-text">
+        Hello! I am Ranulf Klux P. Garcia or you can call me Ranulf. This is my website about me and here you can see my compiled activities and codes that I have made. Enjoy!.
+      </p>
+    </div>
+    
+    <div class="buttons">
+      <a href="INFO.html" class="button">
+        <div class="button-link">* </div>
+        <div class="button-text"> Portfolios </div> <!-- Add text next to the button -->
+      </a>
+      <a href="about.html" class="button">
+        <div class="button-link">* </div>
+        <div class="button-text">About me</div> <!-- Add text next to the button -->
+      </a>
+      <a href="cont.html" class="button">
+        <div class="button-link">* </div>
+        <div class="button-text">Contacts</div> <!-- Add text next to the button -->
+      </a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>US Military Enrollment Form</title>
+  <style>
+    body {
+      background-image: url('military_background.jpg');
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      display: grid;
+      grid-gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>US Military Enrollment Form</h2>
+
+    <form action="process_enrollment.php" method="POST">
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" rows="4" required></textarea>
+
+      <label for="birthdate">Date of Birth:</label>
+      <input type="date" id="birthdate" name="birthdate" required>
+
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Only two genders lol</option>
+      </select>
+
+      <label for="branch">Preferred Branch:</label>
+      <select id="branch" name="branch" required>
+        <option value="">Select Branch</option>
+        <option value="army">Army</option>
+        <option value="navy">Navy</option>
+        <option value="air_force">Air Force</option>
+        <option value="marine_corps">Marine Corps</option>
+        <option value="coast_guard">Coast Guard</option>
+      </select>
+
+      <label for="education">Highest Education Level:</label>
+      <select id="education" name="education" required>
+        <option value="">Select Education Level</option>
+        <option value="high_school">High School</option>
+        <option value="diploma">Diploma</option>
+        <option value="associate">Associate Degree</option>
+        <option value="bachelor">Bachelor's Degree</option>
+        <option value="master">Master's Degree</option>
+        <option value="doctorate">Doctorate Degree</option>
+      </select>
+
+      <label for="citizenship">Citizenship Status:</label>
+      <select id="citizenship" name="citizenship" required>
+        <option value="">Select Citizenship Status</option>
+        <option value="us_citizen">US Citizen</option>
+        <option value="permanent_resident">Permanent Resident</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="availability">Availability:</label>
+      <textarea id="availability" name="availability" rows="4" required></textarea>
+
+      <center><H1><a href="page.html">Submit</a></H1>
+    </form>
+  </div>
+</body>
+</html>
